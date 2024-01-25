@@ -1,6 +1,5 @@
 # Alocação e Otimização de Portfólios
 
-Claro, aqui está um texto em formato markdown para adicionar ao seu repositório no GitHub para o script fornecido:
 
 ```markdown
 # Curso de Análise de Dados com Python
@@ -52,7 +51,12 @@ O resultado final da alocação aleatória é apresentado no DataFrame `dataset`
 
 Este script faz parte do curso de Análise de Dados com Python, ministrado pelo professor Jonas, através da plataforma Udemy, e aborda temas de relevância acadêmica na área de finanças.
 
-Se precisar de mais informações ou esclarecimentos, sinta-se à vontade para entrar em contato!
-```
+## Recursos
 
-Certifique-se de ajustar o texto conforme necessário e adicionar informações adicionais que julgar relevantes para o contexto do seu repositório no GitHub.
+[Link para o Curso na Udemy](https://www.udemy.com/course/python-para-financas-analise-de-dados-e-machine-learning/learn/lecture/23802824#overview)
+
+[Professor Jones - IA Expert Academy](https://www.linkedin.com/school/ia-expert-academy/)
+
+Lembre-se de manter a integridade dos dados e aproveite a exploração dos conceitos de análise de dados em Python aplicados a portfólios de ações.
+
+
