@@ -47,6 +47,47 @@ print(acoes_pesos)
 print(soma_valor)
 ```
 
+### Métricas de Desempenho do Portfólio
+
+Vamos calcular algumas métricas adicionais para avaliar o desempenho do portfólio:
+
+- Retorno acumulado em todo o período:
+
+```python
+retorno_acumulado = dataset.loc[len(dataset) - 1]['Soma valor'] / dataset.loc[0]['Soma valor'] - 1
+print(retorno_acumulado)
+```
+
+- Desvio padrão (risco da carteira):
+
+```python
+risco_carteira = dataset['Taxa retorno'].std()
+print(risco_carteira)
+```
+
+- Sharpe ratio médio anual (sem considerar a taxa SELIC):
+
+```python
+sharpe_ratio = (dataset['Taxa retorno'].mean() / risco_carteira) * np.sqrt(246)
+print(sharpe_ratio)
+```
+Lembre-se de que um Sharpe ratio maior indica um desempenho melhor, e valores acima de 1.0 são considerados aceitáveis.
+
+### Rendimento em Investimento de Renda Fixa
+
+Finalmente, calculamos o rendimento adquirido em um investimento de renda fixa, considerando a taxa SELIC histórica.
+
+```python
+rendimentos_fixos = valor_2020 - dinheiro_total
+ir = rendimentos_fixos * 15 / 100  # Desconto do Imposto de Renda
+valor_liquido_total = valor_2020 - ir
+print(rendimentos_fixos)
+print(ir)
+print(valor_liquido_total)
+```
+
+*Obs.: Lembre-se de ajustar as taxas SELIC de acordo com o ano desejado.*
+
 O resultado final da alocação aleatória é apresentado no DataFrame `dataset`, onde cada linha representa o valor investido em cada ação ao longo do tempo, a taxa de retorno diária e a soma total do valor investido.
 
 Este script faz parte do curso de Análise de Dados com Python, ministrado pelo professor Jonas, através da plataforma Udemy, e aborda temas de relevância acadêmica na área de finanças.
